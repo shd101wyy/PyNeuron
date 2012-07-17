@@ -1,0 +1,11 @@
+input_layer:[2]
+hidden_layers:[0]
+output_layer:[2]
+has_bias:True
+layer_to_layer_weight:{'in_to_out': [[0.4105960218902063, -1.5404695668949286], [-1.4738879020756168, 0.15333502205336091]]}
+bias_to_layer:{'out': [[0.7087713881319752], [0.4127703553973703]]}
+neuron_function:{'out0': 'hardlim', 'out1': 'hardlim'}
+neuron_dict:{'out0': 'output_neuron_0', 'out1': 'output_neuron_1', 'in0': 'input_neuron_0', 'in1': 'input_neuron_1'}
+name_dict:{'output_neuron_1': 'out1', 'output_neuron_0': 'out0', 'input_neuron_1': 'in1', 'input_neuron_0': 'in0'}
+input_data:[[-2, 1], [-1, 2], [1, 1], [1, 2], [2, 0], [2, -1], [-1, -1], [-2, -2]]
+output_data:[[0, 1], [0, 1], [0, 0], [0, 0], [1, 0], [1, 0], [1, 1], [1, 1]]
