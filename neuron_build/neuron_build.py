@@ -744,3 +744,19 @@ class NeuronBuilder(object):
                     break
         self.winner_neuron=winner_neuron
         return winner_neuron
+    
+    def activate(self,input_list_to_input_layer):
+        if self.input_num==len(input_list_to_input_layer):
+            temp=self.input_list_to_input_layer
+            self.setInputToInputLayer(input_list_to_input_layer)
+            output=self.getOutputFromLayer('out')
+            #for i in range(len(input_list_to_input_layer)):
+            #    input_list_to_input_layer[i]=None
+            self.setInputToInputLayer(temp)
+            return output
+        else:
+            print 'The num of inputs to input layer that you entered is wrong'
+            print 'Please check'
+        
+            
+        
