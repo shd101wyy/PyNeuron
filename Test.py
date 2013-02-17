@@ -458,7 +458,7 @@ print i.activate([0,1])
 i.train([1,1])
 print i.activate([0,1])
 '''
-
+'''
 from pyneuron.neuron_build.neuron_build import NeuronBuilder
 from pyneuron.trainer.Kohonen import KohonenTrainer
 net=NeuronBuilder([2],[0],[5])
@@ -473,3 +473,4 @@ k.KohonenTrainForWinnerNeuron([1,1],'out')
 print net.neuron_to_neuron_weight
 k.KohonenTrainForWinnerNeuron([1,1],'out')
 print net.neuron_to_neuron_weight
+'''
