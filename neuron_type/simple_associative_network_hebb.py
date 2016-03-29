@@ -5,8 +5,8 @@ Created on 2012-6-7
 
 I just find that decay_rate can be understood as how well you often forget something
 '''
-from pyneuron.neuron_build.neuron_build import NeuronBuilder
-from pyneuron.trainer.Hebb_Unsupervised import HebbUnsupervisedTrainer
+from neuron_build.neuron_build import NeuronBuilder
+from trainer.Hebb_Unsupervised import HebbUnsupervisedTrainer
 class SimpleAssociativeNetwork(object):
 
     def __init__(self,input_num,output_num,unconditioned_input_num,function_name='hardlim',learning_rate=0.2,decay_rate=0.1):

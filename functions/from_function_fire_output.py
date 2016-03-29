@@ -4,7 +4,7 @@ Created on 2012-5-31
 @author: shd101wyy
 '''
 from functions import *
-from pyneuron.functions.convert_matrix_to_list import convertMatrixToList
+from convert_matrix_to_list import convertMatrixToList
 from sympy import Matrix
 #output is list
 def fireForList(function_name,output):

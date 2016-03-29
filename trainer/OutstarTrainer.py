@@ -4,8 +4,6 @@ Created on 2012-6-7
 @author: shd101wyy
 '''
 #Only two layers neural network supported
-from pyneuron.neuron_build.neuron_build import NeuronBuilder     
-import pylab as py   
 class OutstarTrainer(object):
 
     def __init__(self,net,learning_rate=0.2):
@@ -35,7 +33,7 @@ class OutstarTrainer(object):
                     #self.net.neuron_to_neuron_weight[key]=(1-self.decay_rate)*self.net.neuron_to_neuron_weight[key]+self.learning_rate*output[int(index)][0]*input_from_input_layer
                     self.net.neuron_to_neuron_weight[key]=self.net.neuron_to_neuron_weight[key]+self.learning_rate*(output[int(index)][0]-self.net.neuron_to_neuron_weight[key])*input_from_input_layer
         self.net.updateLayerToLayerWeightByNeuronToNeuronWeight()
-        print("Finish Training")
+        # print("Finish Training")
 
         
     def setLearningRate(self,learn_rate):

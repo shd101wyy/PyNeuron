@@ -3,8 +3,8 @@ Created on 2012-6-7
 
 @author: shd101wyy
 '''
-from pyneuron.neuron_build.neuron_build import NeuronBuilder
-from pyneuron.trainer.OutstarTrainer import OutstarTrainer
+from neuron_build.neuron_build import NeuronBuilder
+from trainer.OutstarTrainer import OutstarTrainer
 class OutstarNetwork(object):
 
     def __init__(self,input_num,unconditioned_input_num,function_name='satlins',learning_rate=0.2):
@@ -19,11 +19,10 @@ class OutstarNetwork(object):
         for i in range(input_num-unconditioned_input_num):
             for neuron in self.net.neuron_in_layer['out']:
                 self.net.connectTwoNeurons('in'+str(i+unconditioned_input_num),neuron)
-        print self.net.neuron_to_neuron_weight
-        print self.net.layer_to_layer_weight
+        # print self.net.neuron_to_neuron_weight
+        # print self.net.layer_to_layer_weight
         self.net.setLayerFunction('out', self.function_name)
         self.net.setUnconditionedNeuronNum(unconditioned_input_num)
-        
            
     def activate(self,input_list):
         self.net.setInputToInputLayer(input_list)

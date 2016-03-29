@@ -9,7 +9,7 @@ Recurrent Layer:
     function:
         satlins
 '''
-from pyneuron.neuron_type.TwoLayersNeuralNetwork import TwoLayersNeuralNetwork
+from neuron_type.TwoLayersNeuralNetwork import TwoLayersNeuralNetwork
 class HopfieldNetwork(TwoLayersNeuralNetwork):
     def __init__(self,input_num=2,function_name='hardlim',weight=None,bias=None,data_set=None,learning_rate=0.2,max_error=0,max_epoch=-1):
         

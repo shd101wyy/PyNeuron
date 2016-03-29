@@ -5,8 +5,6 @@ Created on 2012-6-7
 '''
 
 #Only two layers neural network supported
-from pyneuron.neuron_build.neuron_build import NeuronBuilder     
-import pylab as py   
 class InstarTrainer(object):
 
     def __init__(self,net,learning_rate=0.2):

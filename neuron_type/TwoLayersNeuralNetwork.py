@@ -96,8 +96,8 @@ class TwoLayersNeuralNetwork(object):
   #  def setLearningRate(self,learning_rate):
   #      self.learning_rate=learning_rate
 '''  
-from pyneuron.neuron_build.neuron_build import NeuronBuilder
-from pyneuron.trainer.LMSTrainer import LMSTrainer
+from neuron_build.neuron_build import NeuronBuilder
+from trainer.LMSTrainer import LMSTrainer
 class TwoLayersNeuralNetwork(object):
 
     def __init__(self,input_num,output_num,function_name='hardlim',weight=None,bias=None,data_set=None,learning_rate=0.2,max_error=0,max_epoch=-1):

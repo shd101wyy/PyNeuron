@@ -4,8 +4,8 @@ Created on 2012-6-7
 @author: shd101wyy
 '''
 
-from pyneuron.neuron_build.neuron_build import NeuronBuilder
-from pyneuron.trainer.InstarTrainer import InstarTrainer
+from neuron_build.neuron_build import NeuronBuilder
+from trainer.InstarTrainer import InstarTrainer
 class InstarNetwork(object):
 
     def __init__(self,input_num,output_num,unconditioned_input_num,function_name='hardlim',learning_rate=0.2):

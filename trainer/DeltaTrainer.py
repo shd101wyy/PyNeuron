@@ -162,10 +162,10 @@ Created on 2012-6-9
 #This is an experiment version whose algorithm is recently developed
 
 import pylab as py
-from pyneuron.functions.from_function_fire_output import *
-from pyneuron.functions.convert_matrix_to_list import convertMatrixToList
-from pyneuron.neuron_build.neuron_build import NeuronBuilder
-from pyneuron.functions.functions import diff_function
+from functions.from_function_fire_output import *
+from functions.convert_matrix_to_list import convertMatrixToList
+from neuron_build.neuron_build import NeuronBuilder
+from functions.functions import diff_function
 
 class DeltaTrainer(object):
 

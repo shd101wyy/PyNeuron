@@ -18,11 +18,11 @@ print net.getOutputFromOneNeuron('out0')
 net.showNetworkSimulation()
 '''
 
-from pyneuron.neuron_build.neuron_build import NeuronBuilder
+from neuron_build.neuron_build import NeuronBuilder
 net=NeuronBuilder([2],[3],[2],has_bias=True)
 net.connectTwoLayers('in', 'hid0')
 net.connectTwoLayers('hid0','out')
-from pyneuron.data.DataSet import DataSet
+from data.DataSet import DataSet
 data=DataSet(2,2)
 data.addItem([1,1], [-1,-1])
 data.addItem([1,-1],[-1,1])
@@ -34,7 +34,7 @@ net.setLayerFunction('out','purelin')
 net.setInputToInputLayer([1,1])
 print net.getOutputFromLayer('out')
 print net.neuron_function
-from pyneuron.trainer.DeltaTrainer import DeltaTrainer
+from trainer.DeltaTrainer import DeltaTrainer
 trainer=DeltaTrainer(net)
 trainer.setMaxError(0.001)
 trainer.DeltaTrain()

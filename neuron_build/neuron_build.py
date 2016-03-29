@@ -458,9 +458,10 @@ class NeuronBuilder(object):
             return self.neuron_to_neuron_weight[first_neuron_key+"_to_"+second_neuron_key]*input_from_first_neuron
         else:
             return None
+
     def getOutputFromOneNeuron(self,output_from_neuron_key):
-        from pyneuron.functions.from_function_fire_output import fireForOneValue
-        from pyneuron.functions.functions import compet
+        from functions.from_function_fire_output import fireForOneValue
+        from functions.functions import compet
         if output_from_neuron_key.find('in')!=-1:
             return self.get_output_from_input_layer[output_from_neuron_key]
         else:
@@ -497,7 +498,7 @@ class NeuronBuilder(object):
             return output
         
     def getTheInputToOneNeuron(self,neuron_key):
-        from pyneuron.functions.from_function_fire_output import fireForOneValue
+        from functions.from_function_fire_output import fireForOneValue
         if neuron_key.find('in')!=-1:
             return self.get_output_from_input_layer[neuron_key]
         else:
@@ -725,7 +726,7 @@ class NeuronBuilder(object):
         self.setRestOfInputNeuronToConditionedNeuronByKnownUnconditionedNeuron()
         
     def showNetworkSimulation(self):
-        from pyneuron.tools.show_network_simulation_using_vpython import ShowNetworkSimulation
+        from tools.show_network_simulation_using_vpython import ShowNetworkSimulation
         show=ShowNetworkSimulation(self)
         #show.designPosition()
         #show.showNeurons()

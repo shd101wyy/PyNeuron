@@ -3,7 +3,7 @@ Created on 2012-5-31
 
 @author: shd101wyy
 '''
-from pyneuron.neuron_type.TwoLayersNeuralNetwork import TwoLayersNeuralNetwork
+from neuron_type.TwoLayersNeuralNetwork import TwoLayersNeuralNetwork
 class Perceptron(TwoLayersNeuralNetwork):
     def __init__(self,input_num=2,output_num=2,function_name='hardlim',weight=None,bias=None,data_set=None,learning_rate=0.2,max_error=0,max_epoch=-1):
         TwoLayersNeuralNetwork.__init__(self, input_num, output_num, function_name, weight, bias, data_set,learning_rate,max_error,max_epoch)

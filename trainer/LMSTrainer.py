@@ -136,8 +136,9 @@ class LMSTrainer(object):
 '''
         
         
-from pyneuron.neuron_build.neuron_build import NeuronBuilder     
-import pylab as py   
+import matplotlib.pyplot as py
+import numpy as np
+
 class LMSTrainer(object):
 
     def __init__(self,net,learning_rate=0.2,max_error=0,max_epoch=-1):
@@ -237,7 +238,7 @@ class LMSTrainer(object):
 
         
     def plotFigure(self):
-        epoch_arange=py.arange(0,self.epoch+1,1)
+        epoch_arange=np.arange(0,self.epoch+1,1)
         #py.title("Target--Output--Error")
         py.plot(epoch_arange,self.plot_error,'bo',label='error')
         #py.plot(epoch_arange,self.plot_target,'ro',label='target')

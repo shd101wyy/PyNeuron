@@ -3,9 +3,8 @@ Created on 2012-6-5
 
 @author: shd101wyy
 '''
-from pyneuron.neuron_build.neuron_build import NeuronBuilder
-from pyneuron.data.DataSet import DataSet
-from pyneuron.trainer.DeltaTrainer import DeltaTrainer
+from neuron_build.neuron_build import NeuronBuilder
+from trainer.DeltaTrainer import DeltaTrainer
 class Backpropagation(object):
     def __init__(self,input_layer_list,hidden_layer_list,output_layer_list,learning_rate=0.2,max_error=0.01,max_epoch=-1):
         '''
@@ -47,10 +46,10 @@ class Backpropagation(object):
             #[weight,bias]=self.trainer.returnTrainedLayerToLayerWeightAndBias()
             [self.net.layer_to_layer_weight,self.net.bias_to_layer]=self.trainer.returnTrainedLayerToLayerWeightAndBias()
             
-            print self.net.neuron_to_neuron_weight
+            # print self.net.neuron_to_neuron_weight
             self.net.updateNeuronToNeuronWeightByLayerToLayerWeight()
             self.net.updateBiasToNeuronByBiasToLayer()
-            print self.net.neuron_to_neuron_weight
+            # print self.net.neuron_to_neuron_weight
 
     def plotFigure(self):
         self.trainer.plotFigure()

@@ -3,7 +3,7 @@ Created on 2012-6-8
 
 @author: shd101wyy
 '''
-from pyneuron.neuron_build.neuron_build import NeuronBuilder
+from neuron_build.neuron_build import NeuronBuilder
 import threading
 class ShowNetworkSimulation(threading.Thread):
     def __init__(self,net):

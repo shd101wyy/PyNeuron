@@ -6,10 +6,10 @@ Created on 2012-6-1
 
 save and load neural network and data set
 '''
-from pyneuron.functions.convert_string_list_to_pure_list import convertStringListToList
-from pyneuron.data.DataSet import DataSet
-from pyneuron.neuron_build.neuron_build import NeuronBuilder
-from pyneuron.functions.convert_string_dict_to_pure_dict import convertStringDictToDict
+from functions.convert_string_list_to_pure_list import convertStringListToList
+from data.DataSet import DataSet
+from neuron_build.neuron_build import NeuronBuilder
+from functions.convert_string_dict_to_pure_dict import convertStringDictToDict
 class NeuralTools(object):
     def __init__(self):
         pass
